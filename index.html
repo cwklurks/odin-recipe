@@ -3,18 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
+    <title>My Recipes</title>
+    <link rel="stylesheet" href="recipie/styles.css">
 </head>
 <body>
-    <h1>Recipe</h1>
+    <header>
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="recipie/lasagna.html">Lasagna</a>
+            <a href="recipie/pizza.html">Pizza</a>
+            <a href="recipie/cinnamon-buns.html">Cinnamon Buns</a>
+            <a href="recipie/sushi.html">Sushi</a>
+        </nav>
+    </header>
+    <h1>Recipes!</h1>
+    <p class="alert-text">Here are a couple recipes of food I like.</p>
     <section>
         <h2>About my page</h2>
-        <p>This is a simple recipe page.</p>
-        <p>I based this off of <a href="https://www.theodinproject.com/lessons/foundations-recipes">this project</a>.</p>
+        <p id="my-special-paragraph">I based this off of <a href="https://www.theodinproject.com/lessons/foundations-recipes">this project</a>.</p>
     </section>
 <section>
-    <p><a href="recipie/lasagna.html">View Lasagna Recipe</a></p>
-    <p><a href="recipie/pizza.html">View Pizza Recipe</a></p>
+    <h2>My Recipes</h2>
+    <table>
+        <tr>
+            <th>Photo</th>
+            <th>Recipe</th>
+        </tr>
+        <tr>
+            <td><img src="recipie/images/lasagna.jpg" alt="Tasty lasagna" width="300"></td>
+            <td><a href="recipie/lasagna.html"><p>Lasagna</p></a></td>
+        </tr>
+        <tr>
+            <td><img src="recipie/images/pizza.jpg" alt="Tasty pizza" width="300"></td>
+            <td><a href="recipie/pizza.html"><p>Pizza</p></a></td>
+        </tr>
+        <tr>
+            <td><img src="recipie/images/cinnamon-bun.webp" alt="Tasty cinnamon buns" width="300"></td>
+            <td><a href="recipie/cinnamon-buns.html"><p>Cinnamon Buns</p></a></td>
+        </tr>
+        <tr>
+            <td><img src="recipie/images/sushi.jpeg" alt="Tasty sushi" width="300"></td>
+            <td><a href="recipie/sushi.html"><p>Sushi</p></a></td>
+        </tr>
+    </table>
 </section>
+    <footer class="footer">
+        <p>&copy; 2026 Connor Klann</p>
+    </footer>
 </body>
 </html> 

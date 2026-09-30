@@ -1,0 +1,155 @@
+/* Border box reset */
+html {
+    box-sizing: border-box;
+    background-color: #f7ebe8;
+}
+
+*, *::before, 
+   *::after {
+    box-sizing: border-box;
+}
+
+/* Universal Selector */
+* { 
+    color: #1e1e24;
+}
+
+p {
+    color: #444140;
+   
+}
+
+.alert-text {
+    color: #e54b4b;
+    font-weight: bold;
+}
+
+#my-special-paragraph {
+    color: #e54b4b; 
+}
+
+ul, ol {
+    list-style-position: inside;
+    padding-left: 1.5rem;
+}
+
+ul {
+    list-style-type: circle;
+}
+
+ol {
+    list-style-type: decimal;
+}
+
+a p {
+    color: #e54b4b;
+}
+
+body > p.alert-text {
+    color: #e54b4b;
+    font-size: x-large;
+}
+
+h1 + p.alert-text {
+    color: #444140;
+}
+
+p {
+    animation-name: slide-in;
+    animation-duration: 0.5s;
+}
+
+@keyframes slide-in { 
+    from{ 
+        translate: 50vw 0;
+        scale: 200% 1; 
+    }
+
+    to{ 
+        translate: 0 0;
+    }   
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 1.5rem;
+    line-height: 1.5;
+}
+
+h1 {
+    margin-bottom: 1rem;
+}
+
+h2 {
+    margin-top: 0;
+    margin-bottom: 0.5rem;
+}
+
+h1, h2 {
+    font-family: Georgia, serif;
+}
+
+section {
+    padding: 1.5rem;
+    border: 1px solid #ffa987;
+    border-radius: 8px;
+    margin-bottom: 2rem;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    border: 1px solid #444140;
+    padding: 0.75rem;
+    text-align: left;
+}
+
+td p {
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    border-radius: 8px;
+    margin: 1rem 0;
+}
+
+li {
+    margin-bottom: 0.5rem;
+}
+
+/* Nav bar (flexbox) */
+.navbar {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+    margin-bottom: 1.5rem;
+    background-color: #ffa987;
+    border-radius: 8px;
+}
+
+.navbar a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Footer */
+.footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 2px solid #ffa987;
+    text-align: center;
+}
+
+/* Photo at the bottom of each recipe */
+.recipe-photo {
+    border: 3px solid #ffa987;
+}
